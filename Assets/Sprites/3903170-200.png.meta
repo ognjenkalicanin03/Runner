@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e769878310a21414d8f8f65a07f05eb1
+guid: d1de4e084f66cc24088d9f8de10f263f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5019042734173207250
-    second: meni pozadina_0
+      213: -7249401975757353690
+    second: 3903170-200_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: meni pozadina_0
+      name: 3903170-200_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 38
+        y: 19
+        width: 124
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e25c91da937c85ab0800000000000000
-      internalID: -5019042734173207250
+      spriteID: 62dc7f0ef43f46b90800000000000000
+      internalID: -7249401975757353690
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      meni pozadina_0: -5019042734173207250
+      3903170-200_0: -7249401975757353690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

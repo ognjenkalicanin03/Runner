@@ -47,4 +47,23 @@ public class PlayerMovement : MonoBehaviour
         // Kretanje levo-desno uz fiziku
         rb.linearVelocity = new Vector2(move.x * speed, rb.linearVelocity.y);
     }
+
+void OnCollisionEnter2D(Collision2D collision)
+{
+    if (collision.collider.CompareTag("Platforma"))
+    {
+        transform.SetParent(collision.transform);
+    }
+}
+
+void OnCollisionExit2D(Collision2D collision)
+{
+    if (collision.collider.CompareTag("Platforma"))
+    {
+        transform.SetParent(null);
+    }
+}
+
+
+
 }
