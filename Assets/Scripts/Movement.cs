@@ -64,6 +64,19 @@ void OnCollisionExit2D(Collision2D collision)
     }
 }
 
+private void OnTriggerEnter2D(Collider2D collision)
+{
+    if (collision.GetComponent<Deadly>() != null)
+    {
+        Die();
+    }
+}
+
+void Die()
+{
+    // ovde radiš šta god želiš: respawn, animacija, restart scene...
+    Debug.Log("Igrac je poginuo!");
+}
 
 
 }
