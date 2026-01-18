@@ -3,13 +3,14 @@ using UnityEngine;
 public class ButtonTrigger : MonoBehaviour
 {
     public Door door;
-    
-    private Vector3 originalScale;
+
+    private Vector3 originalPosition;
     private bool pressed = false;
+    public float pressOffsetY = 0.22f;
 
     void Start()
     {
-        originalScale = transform.localScale;
+        originalPosition = transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,11 +19,11 @@ public class ButtonTrigger : MonoBehaviour
         {
             pressed = true;
 
-            // vizuelno smanjenje dugmeta
-            transform.localScale = new Vector3(
-                originalScale.x,
-                originalScale.y * 0.5f,
-                originalScale.z
+            // Spusti dugme po Y osi
+            transform.position = new Vector3(
+                originalPosition.x,
+                originalPosition.y - pressOffsetY,
+                originalPosition.z
             );
 
             door.OpenDoor();

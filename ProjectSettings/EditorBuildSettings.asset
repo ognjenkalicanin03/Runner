@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SestaScena.unity
     guid: 260fca079d891534fa26929508fb6da4
+  - enabled: 1
+    path: Assets/Scenes/SedmaScena.unity
+    guid: 8862798934cff1749a7574ed5bbe667a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
