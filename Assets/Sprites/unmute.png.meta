@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 64fb6a0cee05f494babef80d939605bc
+guid: cd49559c3c814294e8228f3ca77bb373
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2811451110663260639
-    second: speaker-sticker_0
+      213: -8649512544667484345
+    second: unmute_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: speaker-sticker_0
+      name: unmute_0
       rect:
         serializedVersion: 2
         x: 30
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd90672b3e7440720800000000000000
-      internalID: 2811451110663260639
+      spriteID: 74f3fceea22c6f780800000000000000
+      internalID: -8649512544667484345
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      speaker-sticker_0: 2811451110663260639
+      unmute_0: -8649512544667484345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
