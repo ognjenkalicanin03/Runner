@@ -1,8 +1,8 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerDead : MonoBehaviour
 {
-    public AudioSource deathSound;
     bool isDead = false;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -11,11 +11,16 @@ public class PlayerDead : MonoBehaviour
 
         if (other.CompareTag("Spike"))
         {
-            DeathCounterManager.Instance.AddDeath();
+            Debug.Log("Player died by spike.");
             isDead = true;
-            //deathSound.Play();
-            // ovde ide tvoja logika smrti:
-            // npr. restart levela, animacija, disable kontrole...
+            DeathCounterManager.Instance.AddDeath();
+            StartCoroutine(ResetDeath());
         }
+    }
+
+    IEnumerator ResetDeath()
+    {
+        yield return new WaitForSeconds(0.1f);
+        isDead = false;
     }
 }

@@ -40,6 +40,10 @@ public class PauseMenu : MonoBehaviour
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
+         if (DeathCounterManager.Instance != null)
+    {
+        DeathCounterManager.Instance.ResetDeaths();
+    }
         SceneManager.LoadScene(mainMenuSceneName);
     }
 }

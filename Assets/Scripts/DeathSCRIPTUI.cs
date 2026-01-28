@@ -9,7 +9,7 @@ public class DeathCounterUI : MonoBehaviour
     {
         if (DeathCounterManager.Instance != null)
         {
-            deathText.text = "Deaths: " + DeathCounterManager.Instance.deathCount;
+            deathText.text = "Deaths: " + DeathCounterManager.Instance.deaths;
         }
     }
 }
