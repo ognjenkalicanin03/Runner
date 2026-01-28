@@ -11,9 +11,9 @@ public class PlayerDead : MonoBehaviour
 
         if (other.CompareTag("Spike"))
         {
+            DeathCounterManager.Instance.AddDeath();
             isDead = true;
-            deathSound.Play();
-
+            //deathSound.Play();
             // ovde ide tvoja logika smrti:
             // npr. restart levela, animacija, disable kontrole...
         }
